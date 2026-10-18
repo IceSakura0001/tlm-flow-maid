@@ -12,6 +12,22 @@
 
 [GitHub 1.6.4 Alpha 下载](https://github.com/IceSakura0001/tlm-flow-maid/releases/tag/v1.6.4-alpha) · [Modrinth 项目（已提交审核）](https://modrinth.com/mod/maid-of-many-trades)
 
+## 游戏截图 / Screenshots
+
+### 拖拽流程编辑器
+
+拖动模块并连接流程，在右侧配置物品、容器与物品不足时的处理方式。下图展示取物步骤的配置界面。
+
+![拖拽流程编辑器与取物参数](docs/images/workflow-editor.png)
+
+### 实验性搭路与高处采集
+
+女仆借助搭建的阶梯接近高处目标并进行采集。该功能需要在设置中开启并提供筑路材料；实际可达性受地形影响。
+
+![女仆沿阶梯接近高处目标并采集](docs/images/road-and-harvest.png)
+
+截图由 IceSakura0001 提供，展示画面含 Minecraft、东方女仆及其他已安装资源；各自权利归对应权利人，不适用本项目代码 MIT 许可。
+
 ## 安装要求
 
 | 项目 | 支持版本 |
