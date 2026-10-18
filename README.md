@@ -23,7 +23,7 @@
 
 客户端和服务器安装相同附属模组版本。将 JAR 放入 mods，移除旧版或重复附属 JAR。本项目不包含母模组。
 
-## 当前版本：1.6.4-road-experimental（Alpha）
+## 当前版本：1.6.4-alpha（Alpha）
 
 - 拖拽流程图、手动画线、条件判断、循环、分组移动、缩放平移、自动排版。
 - 中文名称联想、准星选位置/容器、存取物、装备工具、物品耐久/命名/附魔适配。
@@ -31,7 +31,7 @@
 - 实验性通用筑路/拆障：真实消耗圆石；拆障需主人批准；禁拆区域和方块保护。
 - 窄路减速、边缘支撑检查、阶梯居中、转向后起跳。
 
-54 项必需服务端 GameTest 已通过；玩家反馈当前版本可用。不同整合包、外力和复杂地形仍需测试，**不保证绝不跌落**。交易和通用使用动作尚未实现，编辑器会阻止包含不支持动作的任务执行。AI 自然语言生成尚未实现。
+1.6.3 已通过 54 项必需服务端 GameTest；1.6.4 仅更新图标与说明，63 个游戏逻辑类字节一致，本次未重跑游戏端测试；玩家反馈当前版本可用。不同整合包、外力和复杂地形仍需测试，**不保证绝不跌落**。交易和通用使用动作尚未实现，编辑器会阻止包含不支持动作的任务执行。AI 自然语言生成尚未实现。
 
 筑路默认关闭，在流程图“设置 → 通用移动”开启，并提供圆石和适用工具。局部规划最多水平16格、上下6格、24步；不会强制加载区块。已建道路和已批准完成的拆障不会自动回滚，建议备份存档后体验 Alpha。
 
@@ -54,3 +54,5 @@ All add-on project code was written entirely by **ChatGPT**. Concept, requiremen
 ---
 
 An unofficial visual task-programming add-on for **Touhou Little Maid by TartaricAcid**. Requires Minecraft 1.20.1, Forge 47.2.0+ (47.x), Java 17 and **Touhou Little Maid 1.5.3 for Forge** on both client and server. Current release is an **experimental alpha**. Build roads with real cobblestone, request owner approval before clearing obstacles, and use a drag-and-drop editor to compose tasks. No parent-mod binary or assets are bundled. Add-on code: MIT; upstream code: MIT; upstream assets: CC BY-NC-SA 4.0.
+
+项目图标由 IceSakura0001 提供；不适用代码 MIT 许可，相关权利保留，详见 NOTICE.md。

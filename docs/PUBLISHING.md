@@ -22,3 +22,5 @@
 ## 1.6.4 Alpha icon update
 
 Original user-provided icon embedded in JAR and README. Modrinth uses a 384px copy to meet its 512 KiB limit. Original PNG is preserved. Build successful; all 63 gameplay class files identical to 1.6.3. Game/client tests not rerun for this resource-only update. SHA256: `5ed9231fa5ca2d80626efdeca8f44142b6438cf9dc5aabf07294558018b74ad8`. Icon excluded from code MIT license.
+
+1.6.4 Alpha uploaded: GitHub tag v1.6.4-alpha; Modrinth version Bcbgr4an. Project icon saved on Modrinth. Description credit update blocked by platform link validation; credit included in version changelog and bundled NOTICE.md. Existing GitHub source and issue URLs retained. Project approval remains pending.
