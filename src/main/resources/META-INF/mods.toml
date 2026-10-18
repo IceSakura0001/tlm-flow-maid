@@ -4,9 +4,13 @@ license="MIT"
 [[mods]]
 modId="tlm_programmable"
 version="${file.jarVersion}"
-displayName="TLM Flow Maid - ROAD EXPERIMENT"
-authors="TLM Programmable Tasks contributors"
-description='''Build safe, draggable flow tasks for your maid.'''
+displayName="诸艺皆通：自定义女仆任务 | Maid of Many Trades"
+authors="IceSakura0001 (concept and testing), ChatGPT (all add-on code)"
+description='''诸艺皆通：自定义女仆任务 / Maid of Many Trades: Custom Tasks.
+酒石酸 TartaricAcid 的东方女仆 Touhou Little Maid 的非官方衍生附属模组。
+必须另外安装 Touhou Little Maid 1.5.3-forge+mc1.20.1。
+本项目附属模组代码完全由 ChatGPT 编写；需求设计及游戏测试由 IceSakura0001 提供。
+Unofficial add-on; original mod required. Experimental alpha. See bundled NOTICE.md for attribution.''' 
 [[dependencies.tlm_programmable]]
 modId="forge"
 mandatory=true

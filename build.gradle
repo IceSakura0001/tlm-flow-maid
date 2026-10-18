@@ -45,6 +45,8 @@ tasks.withType(JavaCompile).configureEach {
     options.release = 17
 }
 tasks.named('jar', Jar).configure {
+    from('LICENSE', 'NOTICE.md')
+    from('LICENSES') { into 'META-INF/licenses' }
     exclude 'dev/tlmprogrammable/flow/gametest/**'
     exclude 'data/tlm_programmable/structures/empty.nbt'
     manifest.attributes('Implementation-Version': project.version, 'MixinConfigs': 'tlm_flow.mixins.json')
