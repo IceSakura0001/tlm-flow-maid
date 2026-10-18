@@ -8,5 +8,11 @@
   "stable_1_5_1_jar_unchanged": true,
   "merged_into_main": false,
   "client_visual_test": "pending",
-  "regression": "Actual Entity.move speed and edge guard; one-block descent and gravity/jump preservation; fresh scaffolding and four floating ores."
+  "regression": "Actual Entity.move speed and edge guard; one-block descent and gravity/jump preservation; fresh scaffolding and four floating ores.",
+  "public_release_file": "maid-of-many-trades-1.6.3-alpha.jar",
+  "public_release_sha256": "564e748e8f0915dbfe3a8895e1a8053d4f31a89e3180dfa9a3c14acc5098c80d",
+  "public_release_bytes": 209204,
+  "public_build": "successful",
+  "gameplay_class_files_identical_to_tested_1_6_3": 63,
+  "metadata_only_repackage": true
 }
