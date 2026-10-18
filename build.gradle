@@ -1,0 +1,86 @@
+plugins {
+    id 'java'
+    id 'net.minecraftforge.gradle' version '6.0.24'
+}
+
+version = '1.6.3-road-experimental'
+group = 'dev.tlmprogrammable'
+base { archivesName = 'tlm-flow-maid-road-experimental' }
+java.toolchain.languageVersion = JavaLanguageVersion.of(17)
+
+minecraft {
+    mappings channel: 'official', version: '1.20.1'
+    copyIdeResources = true
+    runs {
+        configureEach {
+            workingDirectory project.file('run')
+            args '--mixin', 'tlm_flow.mixins.json'
+            property 'forge.logging.console.level', 'info'
+            // TLM's production jar contains SRG refmaps. Remap them in the official-name dev runtime.
+            property 'mixin.env.remapRefMap', 'true'
+            property 'mixin.env.refMapRemappingFile', file('build/createSrgToMcp/output.srg').absolutePath
+            mods { tlm_programmable { source sourceSets.main } }
+        }
+        client {
+            if (project.hasProperty('smoke')) property 'tlm_programmable.devSmoke', 'true'
+        }
+        server { args '--nogui' }
+        gameTestServer {
+            property 'forge.enabledGameTestNamespaces', 'tlm_programmable'
+        }
+    }
+}
+
+repositories {
+    mavenCentral()
+    flatDir { dirs 'libs' }
+}
+dependencies {
+    minecraft 'net.minecraftforge:forge:1.20.1-47.2.0'
+    implementation fg.deobf('local:touhoulittlemaid:1.5.3')
+    testImplementation 'junit:junit:4.13.2'
+}
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = 'UTF-8'
+    options.release = 17
+}
+tasks.named('jar', Jar).configure {
+    exclude 'dev/tlmprogrammable/flow/gametest/**'
+    exclude 'data/tlm_programmable/structures/empty.nbt'
+    manifest.attributes('Implementation-Version': project.version, 'MixinConfigs': 'tlm_flow.mixins.json')
+    finalizedBy 'reobfJar'
+}
+// This workspace path contains non-ASCII characters. A JVM decodes paths that arrive through the
+// Windows command line and Gradle's worker classpath file with the OS ANSI code page, so it cannot
+// find classes whose directory contains those characters (ClassNotFoundException in the test worker).
+// Mirroring the compiled classes next to the Gradle cache keeps every test-classpath entry ASCII.
+def asciiRoot = new File(gradle.gradleUserHomeDir, 'tlm-p1-test-classpath')
+tasks.register('mirrorTestClasses', Sync) {
+    dependsOn tasks.named('testClasses')
+    from sourceSets.test.output.classesDirs
+    into new File(asciiRoot, 'test-classes')
+}
+tasks.register('mirrorMainClasses', Sync) {
+    dependsOn tasks.named('classes')
+    from sourceSets.main.output.classesDirs
+    into new File(asciiRoot, 'main-classes')
+}
+tasks.register('mirrorMainResources', Sync) {
+    dependsOn tasks.named('processResources')
+    from sourceSets.main.output.resourcesDir
+    into new File(asciiRoot, 'main-resources')
+}
+
+tasks.named('test', Test).configure {
+    useJUnit()
+    dependsOn 'mirrorTestClasses', 'mirrorMainClasses', 'mirrorMainResources'
+    classpath = files(
+            new File(asciiRoot, 'test-classes'),
+            new File(asciiRoot, 'main-classes'),
+            new File(asciiRoot, 'main-resources'),
+            sourceSets.test.runtimeClasspath.filter { it.isDirectory() == false })
+    testLogging {
+        events 'failed'
+        exceptionFormat 'full'
+    }
+}

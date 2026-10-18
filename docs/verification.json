@@ -1,0 +1,12 @@
+{
+  "version": "1.6.3-road-experimental",
+  "bytes": 205673,
+  "sha256": "D284CB7313BB6E08AD54D3F26526441267E3F95823E143AD33FB2D65067BAA5E",
+  "gametests_passed": 54,
+  "java_sources_checked": 34,
+  "java_class_major": 61,
+  "stable_1_5_1_jar_unchanged": true,
+  "merged_into_main": false,
+  "client_visual_test": "pending",
+  "regression": "Actual Entity.move speed and edge guard; one-block descent and gravity/jump preservation; fresh scaffolding and four floating ores."
+}

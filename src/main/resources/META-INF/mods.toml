@@ -1,0 +1,27 @@
+modLoader="javafml"
+loaderVersion="[47,)"
+license="MIT"
+[[mods]]
+modId="tlm_programmable"
+version="${file.jarVersion}"
+displayName="TLM Flow Maid - ROAD EXPERIMENT"
+authors="TLM Programmable Tasks contributors"
+description='''Build safe, draggable flow tasks for your maid.'''
+[[dependencies.tlm_programmable]]
+modId="forge"
+mandatory=true
+versionRange="[47.2.0,48)"
+ordering="NONE"
+side="BOTH"
+[[dependencies.tlm_programmable]]
+modId="minecraft"
+mandatory=true
+versionRange="[1.20.1]"
+ordering="NONE"
+side="BOTH"
+[[dependencies.tlm_programmable]]
+modId="touhou_little_maid"
+mandatory=true
+versionRange="[1.5.3-forge+mc1.20.1]"
+ordering="AFTER"
+side="BOTH"

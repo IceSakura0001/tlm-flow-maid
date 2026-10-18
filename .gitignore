@@ -1,0 +1,13 @@
+.gradle/
+build/
+run/
+libs/*.jar
+*.log
+.idea/
+*.iml
+.vscode/
+.env
+.env.*
+*.key
+*.pem
+release/
