@@ -1,8 +1,9 @@
 modLoader="javafml"
 loaderVersion="[47,)"
-license="MIT"
+license="MIT (code); icon: see NOTICE.md"
 [[mods]]
 modId="tlm_programmable"
+logoFile="assets/tlm_programmable/icon.png"
 version="${file.jarVersion}"
 displayName="诸艺皆通：自定义女仆任务 | Maid of Many Trades"
 authors="IceSakura0001 (concept and testing), ChatGPT (all add-on code)"

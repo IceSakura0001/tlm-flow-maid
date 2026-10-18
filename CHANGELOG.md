@@ -1,3 +1,8 @@
+# 1.6.4 Alpha — 2026-10-18
+
+- 添加 IceSakura0001 提供的项目图标：游戏模组列表、README、发布平台。
+- 明确图标与代码分别适用的版权声明。游戏逻辑未修改。
+
 # 1.6.3-road-experimental · Initial public alpha
 
 首次公开发布“诸艺皆通：自定义女仆任务 / Maid of Many Trades: Custom Tasks”当前项目进度（2026-10-18）。

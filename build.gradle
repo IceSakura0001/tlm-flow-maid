@@ -3,7 +3,7 @@ plugins {
     id 'net.minecraftforge.gradle' version '6.0.24'
 }
 
-version = '1.6.3-road-experimental'
+version = '1.6.4-alpha'
 group = 'dev.tlmprogrammable'
 base { archivesName = 'tlm-flow-maid-road-experimental' }
 java.toolchain.languageVersion = JavaLanguageVersion.of(17)

@@ -18,3 +18,7 @@
 项目说明、JAR、GitHub与Modrinth披露均注明：附属代码完全由ChatGPT编写；需求设计与游戏测试由IceSakura0001提供。原项目作者酒石酸/TartaricAcid及贡献者，原代码MIT、原资源CC BY-NC-SA4.0；本附属代码MIT，不随附母模组JAR或美术/模型/音效。
 
 尚未上传自制项目图标或展示图（平台建议项，不影响已提交审核）。Modrinth审核通过与否由平台决定；后续若收到审核反馈，需要据反馈处理，不应把“已上传/已提交审核”表述为“已审核通过”。
+
+## 1.6.4 Alpha icon update
+
+Original user-provided icon embedded in JAR and README. Modrinth uses a 384px copy to meet its 512 KiB limit. Original PNG is preserved. Build successful; all 63 gameplay class files identical to 1.6.3. Game/client tests not rerun for this resource-only update. SHA256: `5ed9231fa5ca2d80626efdeca8f44142b6438cf9dc5aabf07294558018b74ad8`. Icon excluded from code MIT license.

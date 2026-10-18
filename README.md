@@ -1,5 +1,7 @@
 # 诸艺皆通：自定义女仆任务
 
+<img src="src/main/resources/assets/tlm_programmable/icon.png" alt="Maid of Many Trades icon" width="256" />
+
 **Maid of Many Trades: Custom Tasks**（项目标识：`tlm-flow-maid`）
 
 为女仆拖拽编写任务流程：移动、存取物、采集、攻击/巡逻、饲养/繁殖，以及调用女仆原有工作能力。
@@ -8,7 +10,7 @@
 
 ## 下载
 
-[GitHub 1.6.3 Alpha 下载](https://github.com/IceSakura0001/tlm-flow-maid/releases/tag/v1.6.3-alpha) · [Modrinth 项目（已提交审核）](https://modrinth.com/mod/maid-of-many-trades)
+[GitHub 1.6.4 Alpha 下载](https://github.com/IceSakura0001/tlm-flow-maid/releases/tag/v1.6.4-alpha) · [Modrinth 项目（已提交审核）](https://modrinth.com/mod/maid-of-many-trades)
 
 ## 安装要求
 
@@ -21,7 +23,7 @@
 
 客户端和服务器安装相同附属模组版本。将 JAR 放入 mods，移除旧版或重复附属 JAR。本项目不包含母模组。
 
-## 当前版本：1.6.3-road-experimental（Alpha）
+## 当前版本：1.6.4-road-experimental（Alpha）
 
 - 拖拽流程图、手动画线、条件判断、循环、分组移动、缩放平移、自动排版。
 - 中文名称联想、准星选位置/容器、存取物、装备工具、物品耐久/命名/附魔适配。

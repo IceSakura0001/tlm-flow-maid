@@ -17,3 +17,9 @@ This is an unofficial derivative add-on for **Touhou Little Maid by TartaricAcid
 ## 开发方式声明
 
 本项目自行编写的附属模组代码完全由 ChatGPT 编写；功能构思、需求设计与游戏测试由 IceSakura0001 提供。本声明不涉及或取代母模组、Minecraft、Forge、Gradle 和其他第三方代码/工具的作者与版权声明。
+
+## 项目图标 / Project icon
+
+项目图标由 IceSakura0001 提供并授权用于本项目展示与分发，原图保持不变。图标不属于源代码 MIT 许可范围；图标作者及相关权利人的权利保留。未经相应权利人许可，不得将代码的 MIT 许可理解为图标的再许可。
+
+Project icon supplied by IceSakura0001 for this project's branding and distribution. The icon is excluded from the source-code MIT license; rights remain with its author and applicable rightsholders.
