@@ -1,6 +1,6 @@
 # Attribution and dependency notice / 版权与前置声明
 
-TLM Flow Maid（东方女仆流程任务）是酒石酸 / TartaricAcid 开发的 **东方女仆 Touhou Little Maid** 的非官方衍生附属模组。感谢原模组作者及所有贡献者。本项目不代表原作者，也不宣称获得原作者背书。
+诸艺皆通：自定义女仆任务（Maid of Many Trades: Custom Tasks，项目标识 tlm-flow-maid）是酒石酸 / TartaricAcid 开发的 **东方女仆 Touhou Little Maid** 的非官方衍生附属模组。感谢原模组作者及所有贡献者。本项目不代表原作者，也不宣称获得原作者背书。
 
 本模组不能独立运行，**必须另外安装 Minecraft 1.20.1、Forge 47.2.0+（47.x）、东方女仆 Forge 1.5.3（1.5.3-forge+mc1.20.1）、Java 17**。客户端和服务端均需安装一致版本。
 
@@ -13,3 +13,7 @@ TLM Flow Maid（东方女仆流程任务）是酒石酸 / TartaricAcid 开发的
 - Minecraft、Forge、东方 Project 及相关商标属于各自权利人。本项目非 Mojang、Microsoft、东方女仆官方产品。
 
 This is an unofficial derivative add-on for **Touhou Little Maid by TartaricAcid and contributors**. It requires the original mod to be installed separately. It is not endorsed by the upstream authors. Add-on code is MIT; upstream code is MIT and upstream assets are CC BY-NC-SA 4.0. No upstream mod binary or artwork is bundled.
+
+## 开发方式声明
+
+本项目自行编写的附属模组代码完全由 ChatGPT 编写；功能构思、需求设计与游戏测试由 IceSakura0001 提供。本声明不涉及或取代母模组、Minecraft、Forge、Gradle 和其他第三方代码/工具的作者与版权声明。

@@ -1,4 +1,6 @@
-# TLM Flow Maid · 东方女仆流程任务
+# 诸艺皆通：自定义女仆任务
+
+**Maid of Many Trades: Custom Tasks**（项目标识：`tlm-flow-maid`）
 
 为女仆拖拽编写任务流程：移动、存取物、采集、攻击/巡逻、饲养/繁殖，以及调用女仆原有工作能力。
 
@@ -32,6 +34,12 @@
 准备 Java 17，运行 `powershell -ExecutionPolicy Bypass -File fetch-tlm.ps1` 下载并校验官方母模组编译依赖（只保存在本地 libs，不随仓库分发），然后运行 `./gradlew build`（Windows：`gradlew.bat build`）。产物在 build/libs。
 
 运行服务端测试：`gradlew.bat runGameTestServer -x downloadAssets`。测试类不包含在发布 JAR 中。
+
+## 开发署名
+
+本项目的附属模组代码完全由 **ChatGPT** 编写。功能构思、需求设计与游戏测试由 **IceSakura0001** 提供。此说明仅指本项目自行编写的代码，不包括 Minecraft、Forge、东方女仆、Gradle 及其他第三方代码或工具；其版权与署名保持原样。
+
+All add-on project code was written entirely by **ChatGPT**. Concept, requirements and in-game testing were provided by **IceSakura0001**. This statement does not apply to upstream projects or third-party dependencies and tooling.
 
 ## 许可与致谢
 
