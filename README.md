@@ -6,6 +6,10 @@
 
 **本项目是酒石酸（TartaricAcid）东方女仆 Touhou Little Maid 的非官方衍生附属模组，必须前置安装母模组，不能独立运行。** 原作者与许可详见 [NOTICE.md](NOTICE.md)。
 
+## 下载
+
+[GitHub 1.6.3 Alpha 下载](https://github.com/IceSakura0001/tlm-flow-maid/releases/tag/v1.6.3-alpha) · [Modrinth 项目（已提交审核）](https://modrinth.com/mod/maid-of-many-trades)
+
 ## 安装要求
 
 | 项目 | 支持版本 |
